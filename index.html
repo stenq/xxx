@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine Invitation</title>
+
+<style>
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffe6ec;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    max-width: 400px;
+}
+
+h1 {
+    color: #e63946;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.yes {
+    background: #e63946;
+    color: white;
+}
+
+.no {
+    background: #ccc;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <h1>Will you be my Valentine? ❤️</h1>
+
+    <div class="buttons">
+        <button class="yes" onclick="sayYes()">Yes</button>
+        <button class="no" onclick="sayNo()">No</button>
+    </div>
+
+    <div class="message" id="message"></div>
+</div>
+
+<script>
+function sayYes() {
+    document.getElementById("message").innerText =
+        "Yay! 💖 I knew it. Happy Valentine’s Day!";
+}
+
+function sayNo() {
+    document.getElementById("message").innerText =
+        "That button was just for decoration 😄 Try again.";
+}
+</script>
+
+</body>
+</html>
